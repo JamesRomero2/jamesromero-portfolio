@@ -1,0 +1,69 @@
+@use '../util/' as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+
+  label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(5);
+  }
+
+  textarea,
+  input {
+    outline: none;
+    border: none;
+    padding: rem(10) rem(15);
+    border-radius: rem(5);
+    margin-bottom: rem(10);
+    background-color: var(--textColor);
+    color: var(--background);
+    font-size: 0.9rem;
+    resize: vertical;
+
+    &:invalid {
+      background-color: var(--textColor);
+      color: var(--background);
+    }
+
+    &:valid {
+      background-color: var(--background-opacity);
+      color: var(--textColor);
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(10);
+    align-items: center;
+
+    &__left {
+      font-size: rem(10);
+      margin: 0;
+      padding: 0;
+    }
+
+    &__clear {
+      background-color: var(--background);
+      color: var(--textColor) !important;
+    }
+    &__send {
+      background-color: var(--callBGColor);
+    }
+
+    button {
+      cursor: pointer;
+      width: rem(100);
+      margin-left: rem(20);
+      text-align: center;
+      padding: 1em 0em;
+      border: none;
+      border-radius: rem(10);
+      color: var(--callTextColor);
+      font-weight: bold;
+      letter-spacing: rem(1);
+    }
+  }
+}

@@ -1,0 +1,20 @@
+:root {
+  --background: hsl(255, 29%, 97%);
+  --background-opacity: hsl(340, 100%, 99%, 80%);
+  --toggle-btn-color: hsl(266, 100%, 27%);
+  --textColor: hsl(219, 59%, 13%);
+  --primary: hsl(244, 100%, 50%);
+  --secondary: hsl(187, 75%, 75%);
+  --callBGColor: hsl(138, 100%, 50%);
+  --callTextColor: hsl(0, 0%, 0%);
+}
+[data-theme='dark'] {
+  --background: rgb(0, 7, 19);
+  --background-opacity: hsl(219, 59%, 13%, 50%);
+  --toggle-btn-color: hsl(50, 100%, 50%);
+  --textColor: hsl(340, 100%, 99%, 100%);
+  --primary: hsl(244, 100%, 40%, 100%);
+  --secondary: hsl(207, 59%, 57%, 100%);
+  --callBGColor: hsl(167, 100%, 50%);
+  --callTextColor: hsl(0, 0%, 0%);
+}

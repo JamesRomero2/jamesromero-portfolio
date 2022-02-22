@@ -1,0 +1,15 @@
+//640px, 768px, 1024px, 1280px, 1536px
+//Resolution / 16 = [value]em
+$breakpoints_up: (
+	"small": "40em",
+	"medium": "48em",
+	"large": "64em",
+	"xlarge": "80em",
+	"xxlarge": "96em"
+);
+
+@mixin breakpoint($size) {
+	@media (min-width: map-get($breakpoints_up, $size)) {
+		@content;
+	}
+}

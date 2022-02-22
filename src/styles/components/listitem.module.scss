@@ -1,0 +1,36 @@
+@use '../util/' as *;
+.tab__list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10);
+
+  @include breakpoint(large) {
+    display: flex;
+    flex-direction: row;
+    gap: rem(20);
+  }
+
+  &__item {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+
+    &:hover {
+      cursor: pointer;
+      border-bottom: 1px solid var(--background);
+    }
+    @include breakpoint(large) {
+      padding: 5px;
+      &:hover {
+        border-bottom: 1px solid var(--textColor);
+      }
+    }
+  }
+}
+.activePage {
+  background-color: var(--secondary);
+  color: var(--textColor);
+  border-radius: 5px;
+}
+.inActivePage {
+  background-color: transparent;
+}

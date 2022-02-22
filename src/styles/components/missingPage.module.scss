@@ -1,0 +1,46 @@
+@use '../util/' as *;
+
+.notFoundPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    display: inline-flex;
+    flex-direction: row;
+
+    &__char {
+      color: var(--textColor);
+      font-family: var(--font-lato);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: rem(48);
+      margin: 0 rem(-2);
+      background-color: var(--secondary);
+      border: rem(5) solid var(--background-opacity);
+      border-radius: 50%;
+      height: rem(40);
+      width: rem(40);
+    }
+  }
+  &__bottomtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-lato);
+    font-size: rem(32);
+    text-align: center;
+  }
+  &__btn {
+    padding: rem(5) rem(10);
+    background-color: var(--secondary);
+    font-family: var(--font-lato);
+    font-size: rem(32);
+    border-radius: rem(10);
+    border: rem(3) solid var(--background-opacity);
+    color: var(--textColor);
+  }
+}
