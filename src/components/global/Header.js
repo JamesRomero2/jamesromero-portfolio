@@ -23,8 +23,6 @@ const Header = ({router}) => {
 
 	if (!mounted) return null;	
 
-	console.log(theme);
-
 	return (
 		<header className={headerStyles.header}>
 			<Link href={'/'} passHref scroll={false}>
