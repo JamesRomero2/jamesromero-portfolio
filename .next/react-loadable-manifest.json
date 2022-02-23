@@ -4,14 +4,7 @@
     "files": [
       "static/chunks/fb7d5399.fe7aebb4c608890d.js",
       "static/chunks/330.d8c45f7df6530a74.js",
-      "static/chunks/675.d73ade5d086a6393.js"
-    ]
-  },
-  "index.js -> ../components/SkillCard": {
-    "id": 5253,
-    "files": [
-      "static/css/196d576125e6488f.css",
-      "static/chunks/253.71a56231d5be1fef.js"
+      "static/chunks/675.0fd4bfc9088d2053.js"
     ]
   }
 }

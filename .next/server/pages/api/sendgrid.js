@@ -21,7 +21,7 @@ const mail_namespaceObject = require("@sendgrid/mail");
 var mail_default = /*#__PURE__*/__webpack_require__.n(mail_namespaceObject);
 ;// CONCATENATED MODULE: ./src/pages/api/sendgrid.js
 
-mail_default().setApiKey(process.env.PUBLIC_SENDGRID_APIKEY);
+mail_default().setApiKey("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");
 async function sendEmail(req, res) {
     try {
         await mail_default().send({

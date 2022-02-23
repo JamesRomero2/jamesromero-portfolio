@@ -1,15 +1,28 @@
 //640px, 768px, 1024px, 1280px, 1536px
 //Resolution / 16 = [value]em
 $breakpoints_up: (
-	"small": "40em",
-	"medium": "48em",
-	"large": "64em",
-	"xlarge": "80em",
-	"xxlarge": "96em"
+  'small': '40em',
+  'medium': '48em',
+  'large': '64em',
+  'xlarge': '80em',
+  'xxlarge': '96em'
+);
+//639px, 767px, 1023px, 1279px, 1535px
+$breakpoints_down: (
+  'small': '39.9375em',
+  'medium': '47.9375em',
+  'large': '63.9375em',
+  'xlarge': '79.9375em',
+  'xxlarge': '95.9375em'
 );
 
 @mixin breakpoint($size) {
-	@media (min-width: map-get($breakpoints_up, $size)) {
-		@content;
-	}
+  @media (min-width: map-get($breakpoints_up, $size)) {
+    @content;
+  }
+}
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints_down, $size)) {
+    @content;
+  }
 }

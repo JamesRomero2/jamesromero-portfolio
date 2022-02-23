@@ -4,11 +4,16 @@
 .section__main {
   display: flex;
   flex-direction: column;
-  margin-top: rem(70);
-  min-height: 90vh;
+  margin-top: rem(30);
+  min-height: 100vh;
+  justify-content: space-evenly;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+
+  @include breakpoint(small) {
+    margin-top: rem(20);
+  }
 
   &__top {
     display: flex;
@@ -33,12 +38,12 @@
       }
 
       &__upperText {
-        font-size: 5.5em;
+        font-size: var(--fs-landing-big);
         font-weight: bolder;
         margin: 0;
       }
       &__lowerText {
-        font-size: 2.5em;
+        font-size: var(--fs-landing-small);
         margin: rem(10) 0;
       }
       &__button {
@@ -48,7 +53,6 @@
         border-radius: rem(5);
         background-color: var(--callBGColor);
         color: var(--callTextColor);
-        font-size: 1rem;
         font-weight: bold;
         letter-spacing: rem(1);
       }
@@ -74,7 +78,6 @@
   }
 
   &__bottom {
-    margin-top: rem(50);
     letter-spacing: rem(1);
     display: flex;
     align-items: center;
@@ -83,6 +86,7 @@
     color: var(--textColor);
     background-color: var(--secondary);
     font-weight: bold;
+    font-size: var(--fs-label);
   }
 }
 //END - Main Section Styles
@@ -96,7 +100,7 @@
 
   &__title {
     display: block;
-    font-size: 1.5rem;
+    font-size: var(--fs-title);
     font-weight: bold;
     z-index: 20;
   }
@@ -146,6 +150,7 @@
           text-justify: inter-word;
           line-height: rem(24);
           z-index: 50;
+          font-size: var(--fs-text);
         }
       }
       button {
@@ -157,7 +162,6 @@
         border-radius: rem(5);
         background-color: var(--callBGColor);
         color: var(--callTextColor);
-        font-size: 1rem;
         font-weight: bold;
         letter-spacing: rem(1);
       }
@@ -177,7 +181,7 @@
   z-index: 50;
 
   &__title {
-    font-size: 1.5rem;
+    font-size: var(--fs-title);
     font-weight: bold;
     z-index: 50;
   }
@@ -203,7 +207,6 @@
     border: none;
     border-radius: rem(5);
     background-color: var(--callBGColor);
-    font-size: 1rem;
     font-weight: bold;
     letter-spacing: rem(1);
 
@@ -221,7 +224,7 @@
 
   &__upper {
     display: block;
-    font-size: 1.5rem;
+    font-size: var(--fs-title);
     font-weight: bold;
   }
   &__lower {

@@ -1,34 +1,28 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
-import Meta from "../components/global/Meta"
 import HomeStyles from "../styles/components/home.module.scss";
 import Logo3DLoader from "../components/lib/Logo3DLoader";
 import SocialMediaLinks from "../components/SocialMediaLinks";
 import ContactForm from "../components/ContactForm";
-// import ProjectCard from "../components/ProjectCard";
-
-
+import SkillCard from "../components/SkillCard";
+ 
 const LazyLogo = dynamic(() => import('../components/Logo3D'), {
 	ssr: false,
 	loading: () => <Logo3DLoader/>
 })
-const LazyCard = dynamic(() => import("../components/SkillCard"), {
-	ssr: false, 
-	loading: () => <Logo3DLoader/>
-})
+
 const Home = () => {
 	return (
 		<>
-			<Meta title="Home - James Romero Portfolio"/>
 			<main className={HomeStyles.section__main}>
 				<div className={HomeStyles.section__main__top}>
 					<div className={HomeStyles.section__main__top__left}>
 						<p className={HomeStyles.section__main__top__left__upperText}>
-							CODING IS FUN
+							CODING<br/>IS FUN
 						</p>
 						<p className={HomeStyles.section__main__top__left__lowerText}>
-							CONSISTENCY &amp; CREATIVITY
+							CONSISTENCY<br/>&amp; CREATIVITY
 						</p>
 						<button type="button" className={HomeStyles.section__main__top__left__button}>
 							CONTACT ME
@@ -69,7 +63,7 @@ const Home = () => {
 					SKILLS
 				</div>
 				<div className={HomeStyles.section__skills__lower}>
-					<LazyCard/>
+					<SkillCard/>
 				</div>
 				<button type="button" className={HomeStyles.section__skills__button}>
 					<a href="/Resume.pdf" target={"_blank"} rel={"noreferrer"}>

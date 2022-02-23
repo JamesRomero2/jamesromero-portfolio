@@ -1,4 +1,93 @@
+@use '../util/' as *;
+
 :root {
-	--font-lato: 'Lato', sans-serif;
-	--font-comfortaa: 'Comfortaa', cursive;
+  --font-lato: 'Lato', sans-serif;
+  --font-comfortaa: 'Comfortaa', cursive;
+}
+
+//Mobile Screen
+@include breakpoint-down(small) {
+  :root {
+    --fs-nav-regular: 1em;
+
+    --fs-landing-big: 4em;
+    --fs-landing-small: 2em;
+
+    --fs-btn: 1em;
+
+    --fs-label: 0.875em;
+
+    --fs-title: 1.5em;
+    --fs-text: 1em;
+
+    --fs-contact-label: 1em;
+    --fs-contact-input: 0.875em;
+
+    --fs-footer: 0.75em;
+  }
+}
+//Tablet Screen
+@include breakpoint(small) {
+  :root {
+    --fs-nav-regular: 1em;
+
+    --fs-landing-big: 5em;
+    --fs-landing-small: 3em;
+
+    --fs-btn: 1em;
+
+    --fs-label: 1.2em;
+
+    --fs-title: 2em;
+    --fs-text: 1em;
+
+    --fs-contact-label: 1.2em;
+    --fs-contact-input: 1em;
+
+    --fs-footer: 1em;
+  }
+}
+
+//Destop Screen
+@include breakpoint(large) {
+  :root {
+    --fs-nav-regular: 1em;
+
+    --fs-landing-big: 6em;
+    --fs-landing-small: 3em;
+
+    --fs-btn: 1em;
+
+    --fs-label: 1.2em;
+
+    --fs-title: 2em;
+    --fs-text: 1.2em;
+
+    --fs-contact-label: 1.2em;
+    --fs-contact-input: 1em;
+
+    --fs-footer: 1.2em;
+  }
+}
+
+//Wide Screen
+@include breakpoint('xxlarge') {
+  :root {
+    --fs-nav-regular: 1.5em;
+
+    --fs-landing-big: 7em;
+    --fs-landing-small: 3em;
+
+    --fs-btn: 1.2em;
+
+    --fs-label: 1.5em;
+
+    --fs-title: 3em;
+    --fs-text: 1.5em;
+
+    --fs-contact-label: 1.5em;
+    --fs-contact-input: 1.2em;
+
+    --fs-footer: 1.5em;
+  }
 }

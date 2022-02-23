@@ -16,7 +16,7 @@ import headerStyles from '../../styles/components/header.module.scss';
 
 const Header = ({router}) => {
 	const [mounted, setMounted] = useState(false);
-	const { theme, setTheme, resolvedTheme } = useTheme();
+	const { setTheme, resolvedTheme } = useTheme();
 	const [toggleSidebar, setToggleSidebar] = useState(false);
 
 	useEffect(() => setMounted(true), []);

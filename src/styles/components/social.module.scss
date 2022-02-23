@@ -28,4 +28,11 @@
       padding-right: rem(10);
     }
   }
+
+  &__text {
+    display: inline;
+    @include breakpoint-down(small) {
+      display: none;
+    }
+  }
 }

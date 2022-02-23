@@ -70,7 +70,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 2095:
+/***/ 3265:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -88,8 +88,62 @@ var jsx_runtime_ = __webpack_require__(997);
 var external_react_ = __webpack_require__(6689);
 ;// CONCATENATED MODULE: external "next-themes"
 const external_next_themes_namespaceObject = require("next-themes");
-// EXTERNAL MODULE: ./src/components/global/Meta.js
-var Meta = __webpack_require__(4708);
+;// CONCATENATED MODULE: external "next/head"
+const head_namespaceObject = require("next/head");
+var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
+;// CONCATENATED MODULE: ./src/components/global/Meta.js
+
+
+const Meta = ()=>{
+    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
+        children: [
+            /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                name: "viewport",
+                content: "width=device-width, initial-scale=1.0"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                name: "keywords",
+                content: "Portfolio, NextJS, ThreeJS, SASS,SCSS, Portfolio NextJS, Beginner Portfolio, Website Portfolio, Webpage, Blue Royalty, James, James Romero"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                name: "description",
+                content: "James Romero's Portfolio"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                name: "author",
+                content: "James Romero"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                name: "author",
+                content: "Blue Royalty"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                property: "og:title",
+                content: "James Romero's Portfolio"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                property: "og:sit_name",
+                content: "James Romero's Portfolio"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                property: "og:type",
+                content: "website"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                property: "og:image",
+                content: "https://ia.media-imdb.com/images/rock.jpg"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                charSet: "UTF-8"
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx("title", {
+                children: "James Romero - Portfolio"
+            })
+        ]
+    }));
+};
+/* harmony default export */ const global_Meta = (Meta);
+
 // EXTERNAL MODULE: ./node_modules/next/image.js
 var next_image = __webpack_require__(5675);
 // EXTERNAL MODULE: ./node_modules/next/link.js
@@ -224,12 +278,11 @@ var header_module_default = /*#__PURE__*/__webpack_require__.n(header_module);
 //TIP : Use export: to export colors from modules.scss
 const Header = ({ router  })=>{
     const { 0: mounted , 1: setMounted  } = (0,external_react_.useState)(false);
-    const { theme , setTheme , resolvedTheme  } = (0,external_next_themes_namespaceObject.useTheme)();
+    const { setTheme , resolvedTheme  } = (0,external_next_themes_namespaceObject.useTheme)();
     const { 0: toggleSidebar , 1: setToggleSidebar  } = (0,external_react_.useState)(false);
     (0,external_react_.useEffect)(()=>setMounted(true)
     , []);
     if (!mounted) return null;
-    console.log(theme);
     return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("header", {
         className: (header_module_default()).header,
         children: [
@@ -330,7 +383,7 @@ const Layout = ({ children , router  })=>{
     return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         className: (layout_module_default()).layout,
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(Meta/* default */.Z, {}),
+            /*#__PURE__*/ jsx_runtime_.jsx(global_Meta, {}),
             /*#__PURE__*/ jsx_runtime_.jsx(global_Header, {
                 router: router
             }),
@@ -500,14 +553,6 @@ module.exports = require("next/dist/shared/lib/utils.js");
 
 /***/ }),
 
-/***/ 968:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/head");
-
-/***/ }),
-
 /***/ 6689:
 /***/ ((module) => {
 
@@ -531,7 +576,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [190,676,664,675,708], () => (__webpack_exec__(2095)));
+var __webpack_exports__ = __webpack_require__.X(0, [190,676,664,675], () => (__webpack_exec__(3265)));
 module.exports = __webpack_exports__;
 
 })();

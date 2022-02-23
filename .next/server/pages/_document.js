@@ -18,12 +18,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class MyDocs extends next_document__WEBPACK_IMPORTED_MODULE_1__["default"] {
-    static async getInitialProps(ctx) {
-        const initialProps = await next_document__WEBPACK_IMPORTED_MODULE_1__["default"].getInitialProps(ctx);
-        return {
-            ...initialProps
-        };
-    }
     render() {
         return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(next_document__WEBPACK_IMPORTED_MODULE_1__.Html, {
             lang: "en",

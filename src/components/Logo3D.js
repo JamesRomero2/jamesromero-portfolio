@@ -88,11 +88,11 @@ const Logo3D = () => {
             }
 
             return () => {
-                console.log('unmount');
                 cancelAnimationFrame(req);
                 renderer.dispose()
             }
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     
     useEffect(() => {

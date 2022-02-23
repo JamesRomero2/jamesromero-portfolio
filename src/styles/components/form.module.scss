@@ -3,12 +3,16 @@
 .form {
   display: flex;
   flex-direction: column;
-  font-size: 1.2rem;
 
   label {
     display: flex;
     justify-content: space-between;
     margin-bottom: rem(5);
+    font-size: var(--fs-contact-label);
+  }
+  textarea {
+    font-size: inherit;
+    font-family: inherit;
   }
 
   textarea,
@@ -20,7 +24,7 @@
     margin-bottom: rem(10);
     background-color: var(--textColor);
     color: var(--background);
-    font-size: 0.9rem;
+    font-size: var(--fs-contact-input);
     resize: vertical;
 
     &:invalid {
@@ -40,7 +44,6 @@
     align-items: center;
 
     &__left {
-      font-size: rem(10);
       margin: 0;
       padding: 0;
     }
