@@ -11,7 +11,7 @@ const LazyLogo = dynamic(() => import('../components/Logo3D'), {
 	ssr: false,
 	loading: () => <Logo3DLoader/>
 })
-const LazyLoadCard = dynamic(() => import('../components/Logo3D'), {
+const LazyLoadCard = dynamic(() => import('../components/SkillCard'), {
 	ssr: false,
 	loading: () => <SkillCard/>
 })
