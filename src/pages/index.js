@@ -11,6 +11,10 @@ const LazyLogo = dynamic(() => import('../components/Logo3D'), {
 	ssr: false,
 	loading: () => <Logo3DLoader/>
 })
+const LazyLoadCard = dynamic(() => import('../components/Logo3D'), {
+	ssr: false,
+	loading: () => <SkillCard/>
+})
 
 const Home = () => {
 	return (
@@ -63,7 +67,7 @@ const Home = () => {
 					SKILLS
 				</div>
 				<div className={HomeStyles.section__skills__lower}>
-					<SkillCard/>
+					<LazyLoadCard/>
 				</div>
 				<button type="button" className={HomeStyles.section__skills__button}>
 					<a href="/Resume.pdf" target={"_blank"} rel={"noreferrer"}>
