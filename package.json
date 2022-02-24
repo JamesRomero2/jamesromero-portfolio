@@ -1,5 +1,5 @@
 {
-  "name": "My Portfolio",
+  "name": "James Romero's Portfolio",
   "version": "1.0.0",
   "description": "Portfolio Created Using Next and SASS/SCSS",
   "main": "index.js",
@@ -15,11 +15,11 @@
   "author": "James Romero",
   "license": "MIT",
   "dependencies": {
+    "@emailjs/browser": "^3.4.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.4.1",
     "@mui/material": "^5.4.1",
-    "@sendgrid/mail": "^7.6.1",
     "embla-carousel-react": "^6.2.0",
     "framer-motion": "^6.2.6",
     "next": "^12.0.10",

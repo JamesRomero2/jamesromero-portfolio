@@ -1,4 +1,5 @@
-import React, {useState} from 'react'; 
+import React, { useState } from 'react'; 
+import emailjs from '@emailjs/browser';
 
 import FormStyles from '../styles/components/form.module.scss';
 
@@ -16,45 +17,40 @@ const ContactForm = () => {
 
     if (frmFullName.length <= 0 || frmEmail.length <= 0 || frmSubject.length <= 0 || frmMessage.length <= 0) {
       isValid = false;
+      console.log("Error in the fields"); 
     }
 
-    console.log("Error in the fields");
     return isValid;
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     let isValidForm = handleValidation();
 
     if (isValidForm) {
       setButtonText("Sending");
-      const res = await fetch("/api/sendgrid", {
-        body: JSON.stringify({
-          fullname: frmFullName,
-          email: frmEmail,
-          subject: frmSubject,
-          message: frmMessage,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-      });
+      emailjs.sendForm(
+        process.env.EMAILJS_SERVICEID, 
+        process.env.EMAILJS_TEMPLATEID, 
+        e.target, 
+        process.env.EMAILJS_USERID)
+        .then((result) => {
+          //Success
+          console.log("Success", result.text);
+        }, (error) => {
+          //Failed
+          console.log("Error", error.text);
+          setMessageoverlay(true);
+          setShowResult(false);
+          setButtonText("Send");
 
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        setMessageoverlay(true);
-        setShowResult(false);
-        setButtonText("Send");
+          setFrmFullName("");
+          setFrmEmail("");
+          setFrmSubject("");
+          setFrmMessage("");
+        });
 
-        setFrmFullName("");
-        setFrmEmail("");
-        setFrmSubject("");
-        setFrmMessage("");
-        return;
-      }
       setMessageoverlay(true);
       setShowResult(true);
       setButtonText("Send");
@@ -65,8 +61,6 @@ const ContactForm = () => {
       setFrmMessage("");
     }
     
-    console.log(frmFullName, frmEmail, frmSubject, frmMessage);
-
     setTimeout(() => {
       setMessageoverlay(false);
     }, 5000);
@@ -75,7 +69,6 @@ const ContactForm = () => {
 
   return (
     <form className={FormStyles.form} onSubmit={handleSubmit}>
-
       <label htmlFor="fullname" className={FormStyles.form__fullname__title}>
         Full name
         <span>*</span>
