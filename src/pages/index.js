@@ -17,9 +17,6 @@ const LazyLoadCard = dynamic(() => import('../components/SkillCard'), {
 })
 
 const Home = () => {
-	const device = useDevice();
-
-
 	return (
 		<>
 			<main className={HomeStyles.section__main}>

@@ -1,0 +1,14 @@
+{
+  "index.js -> ../components/Logo3D": {
+    "id": 675,
+    "files": [
+      "static/chunks/fb7d5399.fe7aebb4c608890d.js",
+      "static/chunks/330.d8c45f7df6530a74.js",
+      "static/chunks/675.4cd0a8960fec7604.js"
+    ]
+  },
+  "index.js -> ../components/SkillCard": {
+    "id": 9867,
+    "files": []
+  }
+}
