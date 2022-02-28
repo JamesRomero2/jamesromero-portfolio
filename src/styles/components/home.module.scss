@@ -226,6 +226,10 @@
     display: block;
     font-size: var(--fs-title);
     font-weight: bold;
+
+    p {
+      margin-bottom: 0;
+    }
   }
   &__lower {
     display: flex;

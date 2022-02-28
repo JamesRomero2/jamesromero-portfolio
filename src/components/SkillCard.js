@@ -8,62 +8,62 @@ const techSkills = [
     {
         key: "1",
         title: "HTML5",
-        image: "/assets/html_logo.png"
+        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057845/portfolio-res/html_logo_fayyxy.webp"
     },
     {
         key: "2",
         title: "CSS3",
-        image: "/assets/css_logo.png"
+        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057845/portfolio-res/css_logo_sp4qyh.webp"
     },
     {
         key: "3",
         title: "JAVASCRIPT",
-        image: "/assets/js_logo.png"
+        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057846/portfolio-res/js_logo_gegrsw.webp"
     },
     {
         key: "4",
         title: "SASS/SCSS",
-        image: "/assets/sass_logo.png"
+        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057846/portfolio-res/sass_logo_azcsdg.webp"
     },
     {
         key: "5",
         title: "TAILWIND CSS",
-        image: "/assets/tailwind_logo.png"
+        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057846/portfolio-res/tailwind_logo_vrubh3.webp"
     },
     {
         key: "6",
         title: "BOOTSTRAP",
-        image: "/assets/bootstrap_logo.png"
+        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057844/portfolio-res/bootstrap_logo_qadhar.webp"
     },
     {
         key: "7",
         title: "REACT",
-        image: "/assets/react_logo.png"
+        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057846/portfolio-res/react_logo_jw201i.webp"
     },
     {
         key: "8",
         title: "NEXT.JS",
-        image: "/assets/next_logo.png"
+        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057846/portfolio-res/nextjs_logo_skoden.webp"
     },
     {
         key: "9",
         title: "SQL DATABASE",
-        image: "/assets/sql_logo.png"
+        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057846/portfolio-res/sql_logo_ptkamq.webp"
     },
     {
         key: "10",
         title: "C#",
-        image: "/assets/csharp_logo.png"
+        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057845/portfolio-res/csharp_logo_ogfnzi.webp"
     },
     {
         key: "11",
         title: "JAVA",
-        image: "/assets/java_logo.png"
+        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057846/portfolio-res/java_logo_wtglkb.webp"
     },
     {
         key: "12",
         title: "NATIVE ANDROID DEVELOPMENT",
-        image: "/assets/android_logo.png"
+        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057845/portfolio-res/androidStudio_logo_wwyakg.webp"
     },
 ]
 

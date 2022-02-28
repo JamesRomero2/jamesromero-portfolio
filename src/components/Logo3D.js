@@ -57,7 +57,7 @@ const Logo3D = () => {
             controls.target = target;
             setContrls(controls)
 
-            loadGLTFModel(scene, '/logo3D.glb', {
+            loadGLTFModel(scene, 'https://res.cloudinary.com/dcd2fsghf/image/upload/v1646058089/portfolio-res/logo3D_x9dukl.glb', {
                 receiveShadow: false,
                 castShadow: false
             }).then(() => {

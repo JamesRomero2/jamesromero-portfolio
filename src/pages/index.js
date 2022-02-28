@@ -17,6 +17,9 @@ const LazyLoadCard = dynamic(() => import('../components/SkillCard'), {
 })
 
 const Home = () => {
+	const device = useDevice();
+
+
 	return (
 		<>
 			<main className={HomeStyles.section__main}>
@@ -33,7 +36,7 @@ const Home = () => {
 						</button>
 					</div>
 					<div className={HomeStyles.section__main__top__right}>
-						<Image src={'/assets/Image1.png'} layout="fill" className={HomeStyles.section__main__top__right__image} objectFit="cover" alt="First Impression Image" priority/>
+						<Image src={'https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057845/portfolio-res/image1_tqnuau.webp'} layout="fill" className={HomeStyles.section__main__top__right__image} objectFit="cover" alt="First Impression Image" priority />
 					</div>
 				</div>
 				<div className={HomeStyles.section__main__bottom}>
@@ -79,8 +82,8 @@ const Home = () => {
 				<div className={HomeStyles.section__contact__upper}>
 					<p>
 						GET IN TOUCH
-					<hr/>
 					</p>
+					<hr/>
 				</div>
 				<div className={HomeStyles.section__contact__lower}>
 					<div className={HomeStyles.section__contact__lower__left}>

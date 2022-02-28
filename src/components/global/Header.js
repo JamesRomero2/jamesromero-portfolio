@@ -28,7 +28,7 @@ const Header = ({router}) => {
 			<Link href={'/'} passHref scroll={false}>
 				<div className={headerStyles.header__label}>
 					<div className={headerStyles.header__label__logo}>
-						<Image src="/assets/logo.png" width={30} height={30} alt="James Romero Logo, Website's Logo"/>
+						<Image src="https://res.cloudinary.com/dcd2fsghf/image/upload/v1646059079/portfolio-res/Crown_g2kvb0.webp" width={30} height={30} alt="James Romero Logo, Website's Logo"/>
 					</div>
 					<p>
 						JAMES ROMERO 
