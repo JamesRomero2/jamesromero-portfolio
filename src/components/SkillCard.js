@@ -8,62 +8,62 @@ const techSkills = [
     {
         key: "1",
         title: "HTML5",
-        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057845/portfolio-res/html_logo_fayyxy.webp"
+        image: "https://res.cloudinary.com/blueshomepage/image/upload/v1646375595/portfolio/html_logo_v2erlh.webp"
     },
     {
         key: "2",
         title: "CSS3",
-        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057845/portfolio-res/css_logo_sp4qyh.webp"
+        image: "https://res.cloudinary.com/blueshomepage/image/upload/v1646375595/portfolio/css_logo_yx87rn.webp"
     },
     {
         key: "3",
         title: "JAVASCRIPT",
-        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057846/portfolio-res/js_logo_gegrsw.webp"
+        image: "https://res.cloudinary.com/blueshomepage/image/upload/v1646375595/portfolio/js_logo_rqpasz.webp"
     },
     {
         key: "4",
         title: "SASS/SCSS",
-        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057846/portfolio-res/sass_logo_azcsdg.webp"
+        image: "https://res.cloudinary.com/blueshomepage/image/upload/v1646375596/portfolio/sass_logo_b6vs6c.webp"
     },
     {
         key: "5",
         title: "TAILWIND CSS",
-        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057846/portfolio-res/tailwind_logo_vrubh3.webp"
+        image: "https://res.cloudinary.com/blueshomepage/image/upload/v1646375596/portfolio/tailwind_logo_cdrt6w.webp"
     },
     {
         key: "6",
         title: "BOOTSTRAP",
-        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057844/portfolio-res/bootstrap_logo_qadhar.webp"
+        image: "https://res.cloudinary.com/blueshomepage/image/upload/v1646375595/portfolio/bootstrap_logo_yrlgvg.webp"
     },
     {
         key: "7",
         title: "REACT",
-        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057846/portfolio-res/react_logo_jw201i.webp"
+        image: "https://res.cloudinary.com/blueshomepage/image/upload/v1646375596/portfolio/react_logo_fe6loc.webp"
     },
     {
         key: "8",
         title: "NEXT.JS",
-        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057846/portfolio-res/nextjs_logo_skoden.webp"
+        image: "https://res.cloudinary.com/blueshomepage/image/upload/v1646375595/portfolio/nextjs_logo_qfpyxq.webp"
     },
     {
         key: "9",
         title: "SQL DATABASE",
-        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057846/portfolio-res/sql_logo_ptkamq.webp"
+        image: "https://res.cloudinary.com/blueshomepage/image/upload/v1646375596/portfolio/sql_logo_eqpl1r.webp"
     },
     {
         key: "10",
         title: "C#",
-        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057845/portfolio-res/csharp_logo_ogfnzi.webp"
+        image: "https://res.cloudinary.com/blueshomepage/image/upload/v1646375595/portfolio/csharp_logo_nf2kso.webp"
     },
     {
         key: "11",
         title: "JAVA",
-        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057846/portfolio-res/java_logo_wtglkb.webp"
+        image: "https://res.cloudinary.com/blueshomepage/image/upload/v1646375595/portfolio/java_logo_mhhmm1.webp"
     },
     {
         key: "12",
         title: "NATIVE ANDROID DEVELOPMENT",
-        image: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057845/portfolio-res/androidStudio_logo_wwyakg.webp"
+        image: "https://res.cloudinary.com/blueshomepage/image/upload/v1646375595/portfolio/androidStudio_logo_ewbbuq.webp"
     },
 ]
 

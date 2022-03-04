@@ -1,5 +1,6 @@
 import React, { useState } from 'react'; 
 import emailjs from '@emailjs/browser';
+import { motion } from "framer-motion";
 
 import FormStyles from '../styles/components/form.module.scss';
 
@@ -110,9 +111,9 @@ const ContactForm = () => {
           <button type="button" className={FormStyles.form__bottom__clear}>
             Clear
           </button>
-          <button type="submit" className={FormStyles.form__bottom__send}>
+          <motion.button whileTap={{scale: 0.8}} type="submit" className={FormStyles.form__bottom__send}>
             {buttonText}
-          </button>
+          </motion.button>
         </div>
       </div>
     </form>

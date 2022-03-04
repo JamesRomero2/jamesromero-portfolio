@@ -70,24 +70,309 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3265:
+/***/ 577:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1664);
+/* harmony import */ var _styles_components_listitem_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(128);
+/* harmony import */ var _styles_components_listitem_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_components_listitem_module_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+const LinkItem = ({ href , path , children , ...props })=>{
+    const active = path === href;
+    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        href: href,
+        passHref: true,
+        scroll: false,
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("li", {
+            className: active ? (_styles_components_listitem_module_scss__WEBPACK_IMPORTED_MODULE_2___default().activePage) : (_styles_components_listitem_module_scss__WEBPACK_IMPORTED_MODULE_2___default().inActivePage),
+            ...props,
+            children: children
+        })
+    }));
+};
+const TabList = ({ toggleSidebar , path  })=>{
+    const openMenu = ()=>{
+        if (toggleSidebar) {
+            toggleSidebar(false);
+        }
+    };
+    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+        className: (_styles_components_listitem_module_scss__WEBPACK_IMPORTED_MODULE_2___default()),
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
+            className: (_styles_components_listitem_module_scss__WEBPACK_IMPORTED_MODULE_2___default().tab__list),
+            children: [
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(LinkItem, {
+                    href: "/projects",
+                    path: path,
+                    onClick: openMenu,
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        onClick: openMenu,
+                        className: (_styles_components_listitem_module_scss__WEBPACK_IMPORTED_MODULE_2___default().tab__list__item),
+                        children: "PROJECTS"
+                    })
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(LinkItem, {
+                    href: "/contact",
+                    path: path,
+                    onClick: openMenu,
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        onClick: openMenu,
+                        className: (_styles_components_listitem_module_scss__WEBPACK_IMPORTED_MODULE_2___default().tab__list__item),
+                        children: "CONTACT"
+                    })
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(LinkItem, {
+                    href: "https://github.com/JamesRomero2/jamesromero-portfolio",
+                    path: path,
+                    onClick: openMenu,
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        onClick: openMenu,
+                        className: (_styles_components_listitem_module_scss__WEBPACK_IMPORTED_MODULE_2___default().tab__list__item),
+                        children: "SOURCE CODE"
+                    })
+                })
+            ]
+        })
+    }));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TabList);
+
+
+/***/ }),
+
+/***/ 2124:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_components_footer_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3677);
+/* harmony import */ var _styles_components_footer_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_components_footer_module_scss__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const Footer = ()=>{
+    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("footer", {
+        className: (_styles_components_footer_module_scss__WEBPACK_IMPORTED_MODULE_1___default().footer),
+        children: [
+            "\xa9 JAMES ROMERO | BLUE ROYALTY ",
+            new Date().getFullYear(),
+            ". All Rights Reserved"
+        ]
+    }));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
+
+
+/***/ }),
+
+/***/ 3023:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5675);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1664);
+/* harmony import */ var next_themes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1162);
+/* harmony import */ var next_themes__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_themes__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _mui_icons_material_DarkMode__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5262);
+/* harmony import */ var _mui_icons_material_DarkMode__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_DarkMode__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _mui_icons_material_LightMode__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3684);
+/* harmony import */ var _mui_icons_material_LightMode__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_LightMode__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _mui_icons_material_Close__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(4173);
+/* harmony import */ var _mui_icons_material_Close__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_Close__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(3365);
+/* harmony import */ var _mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(6197);
+/* harmony import */ var _Sidebar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(3044);
+/* harmony import */ var _TabList__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(577);
+/* harmony import */ var _styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(4215);
+/* harmony import */ var _styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_12__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([framer_motion__WEBPACK_IMPORTED_MODULE_9__, _Sidebar__WEBPACK_IMPORTED_MODULE_10__]);
+([framer_motion__WEBPACK_IMPORTED_MODULE_9__, _Sidebar__WEBPACK_IMPORTED_MODULE_10__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+
+
+
+
+
+
+
+
+
+
+
+
+
+const Header = ({ router  })=>{
+    const { 0: mounted , 1: setMounted  } = (0,react__WEBPACK_IMPORTED_MODULE_4__.useState)(false);
+    const { setTheme , resolvedTheme  } = (0,next_themes__WEBPACK_IMPORTED_MODULE_3__.useTheme)();
+    const { 0: toggleSidebar , 1: setToggleSidebar  } = (0,react__WEBPACK_IMPORTED_MODULE_4__.useState)(false);
+    (0,react__WEBPACK_IMPORTED_MODULE_4__.useEffect)(()=>setMounted(true)
+    , []);
+    if (!mounted) return null;
+    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_9__.motion.header, {
+        className: (_styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_12___default().header),
+        animate: {
+            y: [
+                -50,
+                0
+            ]
+        },
+        transition: {
+            ease: "easeIn"
+        },
+        children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                href: '/',
+                passHref: true,
+                scroll: false,
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: (_styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_12___default().header__label),
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                            className: (_styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_12___default().header__label__logo),
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_image__WEBPACK_IMPORTED_MODULE_1__["default"], {
+                                src: "https://res.cloudinary.com/blueshomepage/image/upload/v1646376715/portfolio/Crown_gqlwlj.webp",
+                                width: 30,
+                                height: 30,
+                                alt: "James Romero Logo, Website's Logo"
+                            })
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                            children: "JAMES ROMERO"
+                        })
+                    ]
+                })
+            }),
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: (_styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_12___default().header__tab),
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: (_styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_12___default().header__tab__list),
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_TabList__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .Z, {
+                            path: router.asPath
+                        })
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(framer_motion__WEBPACK_IMPORTED_MODULE_9__.motion.button, {
+                        whileTap: {
+                            scale: 0.8
+                        },
+                        className: (_styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_12___default().hamburger),
+                        onClick: ()=>setToggleSidebar(!toggleSidebar)
+                        ,
+                        children: toggleSidebar ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_icons_material_Close__WEBPACK_IMPORTED_MODULE_7___default()), {
+                            style: {
+                                fontSize: 24
+                            }
+                        }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_8___default()), {
+                            style: {
+                                fontSize: 24
+                            }
+                        })
+                    }),
+                    toggleSidebar && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Sidebar__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .Z, {
+                        toggleSidebar: setToggleSidebar
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(framer_motion__WEBPACK_IMPORTED_MODULE_9__.motion.button, {
+                        whileTap: {
+                            scale: 0.8
+                        },
+                        className: (_styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_12___default().toggle_btn),
+                        onClick: ()=>setTheme(resolvedTheme === "dark" ? "light" : "dark")
+                        ,
+                        children: resolvedTheme === "dark" ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_icons_material_LightMode__WEBPACK_IMPORTED_MODULE_6___default()), {
+                            style: {
+                                fontSize: 20
+                            }
+                        }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_mui_icons_material_DarkMode__WEBPACK_IMPORTED_MODULE_5___default()), {
+                            style: {
+                                fontSize: 20
+                            }
+                        })
+                    })
+                ]
+            })
+        ]
+    }));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
+
+/***/ }),
+
+/***/ 8054:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Meta__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1523);
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3023);
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2124);
+/* harmony import */ var _styles_components_layout_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5737);
+/* harmony import */ var _styles_components_layout_module_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_components_layout_module_scss__WEBPACK_IMPORTED_MODULE_4__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Header__WEBPACK_IMPORTED_MODULE_2__]);
+_Header__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
+
+
+
+
+const Layout = ({ children , router  })=>{
+    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: (_styles_components_layout_module_scss__WEBPACK_IMPORTED_MODULE_4___default().layout),
+        children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Meta__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {}),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Header__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
+                router: router
+            }),
+            children,
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Footer__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {})
+        ]
+    }));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
+
+/***/ }),
+
+/***/ 1523:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ _app)
+  "Z": () => (/* binding */ global_Meta)
 });
 
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(997);
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(6689);
-;// CONCATENATED MODULE: external "next-themes"
-const external_next_themes_namespaceObject = require("next-themes");
 ;// CONCATENATED MODULE: external "next/head"
 const head_namespaceObject = require("next/head");
 var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
@@ -144,276 +429,129 @@ const Meta = ()=>{
 };
 /* harmony default export */ const global_Meta = (Meta);
 
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(5675);
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__(1664);
-;// CONCATENATED MODULE: external "@mui/icons-material/DarkMode"
-const DarkMode_namespaceObject = require("@mui/icons-material/DarkMode");
-var DarkMode_default = /*#__PURE__*/__webpack_require__.n(DarkMode_namespaceObject);
-;// CONCATENATED MODULE: external "@mui/icons-material/LightMode"
-const LightMode_namespaceObject = require("@mui/icons-material/LightMode");
-var LightMode_default = /*#__PURE__*/__webpack_require__.n(LightMode_namespaceObject);
-;// CONCATENATED MODULE: external "@mui/icons-material/Menu"
-const Menu_namespaceObject = require("@mui/icons-material/Menu");
-var Menu_default = /*#__PURE__*/__webpack_require__.n(Menu_namespaceObject);
-// EXTERNAL MODULE: ./src/styles/components/sidebar.module.scss
-var sidebar_module = __webpack_require__(86);
-var sidebar_module_default = /*#__PURE__*/__webpack_require__.n(sidebar_module);
-;// CONCATENATED MODULE: external "@mui/icons-material/Close"
-const Close_namespaceObject = require("@mui/icons-material/Close");
-var Close_default = /*#__PURE__*/__webpack_require__.n(Close_namespaceObject);
-// EXTERNAL MODULE: ./src/styles/components/listitem.module.scss
-var listitem_module = __webpack_require__(128);
-var listitem_module_default = /*#__PURE__*/__webpack_require__.n(listitem_module);
-;// CONCATENATED MODULE: ./src/components/TabList.js
 
+/***/ }),
 
+/***/ 3044:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-const LinkItem = ({ href , path , children , ...props })=>{
-    const active = path === href;
-    return(/*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-        href: href,
-        passHref: true,
-        scroll: false,
-        children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-            className: active ? (listitem_module_default()).activePage : (listitem_module_default()).inActivePage,
-            ...props,
-            children: children
-        })
-    }));
-};
-const TabList = ({ toggleSidebar , path  })=>{
-    const openMenu = ()=>{
-        if (toggleSidebar) {
-            toggleSidebar(false);
-        }
-    };
-    return(/*#__PURE__*/ jsx_runtime_.jsx("div", {
-        className: (listitem_module_default()),
-        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
-            className: (listitem_module_default()).tab__list,
-            children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(LinkItem, {
-                    href: "/projects",
-                    path: path,
-                    onClick: openMenu,
-                    children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        onClick: openMenu,
-                        className: (listitem_module_default()).tab__list__item,
-                        children: "PROJECTS"
-                    })
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx(LinkItem, {
-                    href: "/contact",
-                    path: path,
-                    onClick: openMenu,
-                    children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        onClick: openMenu,
-                        className: (listitem_module_default()).tab__list__item,
-                        children: "CONTACT"
-                    })
-                }),
-                /*#__PURE__*/ jsx_runtime_.jsx(LinkItem, {
-                    href: "/GithubRepo",
-                    path: path,
-                    onClick: openMenu,
-                    children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        onClick: openMenu,
-                        className: (listitem_module_default()).tab__list__item,
-                        children: "SOURCE CODE"
-                    })
-                })
-            ]
-        })
-    }));
-};
-/* harmony default export */ const components_TabList = (TabList);
-
-;// CONCATENATED MODULE: ./src/components/global/Sidebar.js
+"use strict";
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_components_sidebar_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(86);
+/* harmony import */ var _styles_components_sidebar_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_components_sidebar_module_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6197);
+/* harmony import */ var _TabList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(577);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([framer_motion__WEBPACK_IMPORTED_MODULE_1__]);
+framer_motion__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
 
 
 
 const Sidebar = ({ toggleSidebar  })=>{
-    const openMenu = ()=>{
-        if (toggleSidebar) {
-            toggleSidebar(false);
-        }
-    };
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("nav", {
-        className: (sidebar_module_default()).nav,
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(components_TabList, {
-                toggleSidebar: toggleSidebar
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                className: (sidebar_module_default()).nav__btn,
-                onClick: openMenu,
-                children: /*#__PURE__*/ jsx_runtime_.jsx((Close_default()), {
-                    className: (sidebar_module_default()).nav__hamburger__icon
-                })
-            })
-        ]
+    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(framer_motion__WEBPACK_IMPORTED_MODULE_1__.motion.nav, {
+        animate: {
+            x: [
+                250,
+                0
+            ]
+        },
+        className: (_styles_components_sidebar_module_scss__WEBPACK_IMPORTED_MODULE_3___default().nav),
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_TabList__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
+            toggleSidebar: toggleSidebar
+        })
     }));
 };
-/* harmony default export */ const global_Sidebar = (Sidebar);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Sidebar);
 
-// EXTERNAL MODULE: ./src/styles/components/header.module.scss
-var header_module = __webpack_require__(4215);
-var header_module_default = /*#__PURE__*/__webpack_require__.n(header_module);
-;// CONCATENATED MODULE: ./src/components/global/Header.js
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
+/***/ }),
 
+/***/ 2654:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-
-
-
-
-
-
-
-
-//TODO : FIX HEADER TO MATCH PATH WITH THE STYLES
-//TIP : Use export: to export colors from modules.scss
-const Header = ({ router  })=>{
-    const { 0: mounted , 1: setMounted  } = (0,external_react_.useState)(false);
-    const { setTheme , resolvedTheme  } = (0,external_next_themes_namespaceObject.useTheme)();
-    const { 0: toggleSidebar , 1: setToggleSidebar  } = (0,external_react_.useState)(false);
-    (0,external_react_.useEffect)(()=>setMounted(true)
-    , []);
-    if (!mounted) return null;
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("header", {
-        className: (header_module_default()).header,
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(next_link["default"], {
-                href: '/',
-                passHref: true,
-                scroll: false,
-                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: (header_module_default()).header__label,
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: (header_module_default()).header__label__logo,
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(next_image["default"], {
-                                src: "https://res.cloudinary.com/dcd2fsghf/image/upload/v1646059079/portfolio-res/Crown_g2kvb0.webp",
-                                width: 30,
-                                height: 30,
-                                alt: "James Romero Logo, Website's Logo"
-                            })
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                            children: "JAMES ROMERO"
-                        })
-                    ]
-                })
-            }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                className: (header_module_default()).header__tab,
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: (header_module_default()).header__tab__list,
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(components_TabList, {
-                            path: router.asPath
-                        })
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                        className: (header_module_default()).hamburger,
-                        onClick: ()=>setToggleSidebar(!toggleSidebar)
-                        ,
-                        children: /*#__PURE__*/ jsx_runtime_.jsx((Menu_default()), {
-                            className: (header_module_default()).hamburger__icon,
-                            style: {
-                                fontSize: 21
-                            }
-                        })
-                    }),
-                    toggleSidebar && /*#__PURE__*/ jsx_runtime_.jsx(global_Sidebar, {
-                        toggleSidebar: setToggleSidebar
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                        className: (header_module_default()).toggle_btn,
-                        onClick: ()=>setTheme(resolvedTheme === "dark" ? "light" : "dark")
-                        ,
-                        children: resolvedTheme === "dark" ? /*#__PURE__*/ jsx_runtime_.jsx((LightMode_default()), {
-                            style: {
-                                fontSize: 20
-                            }
-                        }) : /*#__PURE__*/ jsx_runtime_.jsx((DarkMode_default()), {
-                            style: {
-                                fontSize: 20
-                            }
-                        })
-                    })
-                ]
-            })
-        ]
-    }));
-};
-/* harmony default export */ const global_Header = (Header);
-
-// EXTERNAL MODULE: ./src/styles/components/footer.module.scss
-var footer_module = __webpack_require__(3677);
-var footer_module_default = /*#__PURE__*/__webpack_require__.n(footer_module);
-;// CONCATENATED MODULE: ./src/components/global/Footer.js
-
-
-const Footer = ()=>{
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("footer", {
-        className: (footer_module_default()).footer,
-        children: [
-            "\xa9 JAMES ROMERO | BLUE ROYALTY ",
-            new Date().getFullYear(),
-            ". All Rights Reserved"
-        ]
-    }));
-};
-/* harmony default export */ const global_Footer = (Footer);
-
-// EXTERNAL MODULE: ./src/styles/components/layout.module.scss
-var layout_module = __webpack_require__(5737);
-var layout_module_default = /*#__PURE__*/__webpack_require__.n(layout_module);
-;// CONCATENATED MODULE: ./src/components/global/Layout.js
-
-
-
-
-
-const Layout = ({ children , router  })=>{
-    return(/*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        className: (layout_module_default()).layout,
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(global_Meta, {}),
-            /*#__PURE__*/ jsx_runtime_.jsx(global_Header, {
-                router: router
-            }),
-            children,
-            /*#__PURE__*/ jsx_runtime_.jsx(global_Footer, {})
-        ]
-    }));
-};
-/* harmony default export */ const global_Layout = (Layout);
-
-;// CONCATENATED MODULE: ./src/pages/_app.js
+"use strict";
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_themes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1162);
+/* harmony import */ var next_themes__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_themes__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_global_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8054);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_global_Layout__WEBPACK_IMPORTED_MODULE_3__]);
+_components_global_Layout__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
 
 
 
 
 function App({ Component , router , ...pageProps }) {
-    return(/*#__PURE__*/ jsx_runtime_.jsx(external_next_themes_namespaceObject.ThemeProvider, {
+    return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_themes__WEBPACK_IMPORTED_MODULE_2__.ThemeProvider, {
         defaultTheme: "system",
-        children: /*#__PURE__*/ jsx_runtime_.jsx(global_Layout, {
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_global_Layout__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
             router: router,
-            children: /*#__PURE__*/ (0,external_react_.createElement)(Component, {
+            children: /*#__PURE__*/ (0,react__WEBPACK_IMPORTED_MODULE_1__.createElement)(Component, {
                 ...pageProps,
                 key: router.route
             })
         })
     }));
 }
-/* harmony default export */ const _app = (App);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
+
+/***/ }),
+
+/***/ 4173:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/icons-material/Close");
+
+/***/ }),
+
+/***/ 5262:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/icons-material/DarkMode");
+
+/***/ }),
+
+/***/ 3684:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/icons-material/LightMode");
+
+/***/ }),
+
+/***/ 3365:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/icons-material/Menu");
+
+/***/ }),
+
+/***/ 1162:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next-themes");
 
 /***/ }),
 
@@ -567,6 +705,14 @@ module.exports = require("react");
 "use strict";
 module.exports = require("react/jsx-runtime");
 
+/***/ }),
+
+/***/ 6197:
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("framer-motion");;
+
 /***/ })
 
 };
@@ -576,7 +722,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [190,676,664,675], () => (__webpack_exec__(3265)));
+var __webpack_exports__ = __webpack_require__.X(0, [190,676,664,675], () => (__webpack_exec__(2654)));
 module.exports = __webpack_exports__;
 
 })();

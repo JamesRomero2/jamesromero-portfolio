@@ -32,7 +32,7 @@ const TabList = ({toggleSidebar, path}) => {
                         CONTACT
                     </div>
                 </LinkItem>
-                <LinkItem href={"/GithubRepo"} path={path} onClick={openMenu}>
+                <LinkItem href={"https://github.com/JamesRomero2/jamesromero-portfolio"} path={path} onClick={openMenu}>
                     <div onClick={openMenu} className={ItemListStyle.tab__list__item}>
                         SOURCE CODE
                     </div>

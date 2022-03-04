@@ -1,5 +1,6 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import { motion } from "framer-motion";
 
 import HomeStyles from "../styles/components/home.module.scss";
 import Logo3DLoader from "../components/lib/Logo3DLoader";
@@ -21,26 +22,26 @@ const Home = () => {
 		<>
 			<main className={HomeStyles.section__main}>
 				<div className={HomeStyles.section__main__top}>
-					<div className={HomeStyles.section__main__top__left}>
+					<motion.div animate={{x : [-500,0] }} className={HomeStyles.section__main__top__left}>
 						<p className={HomeStyles.section__main__top__left__upperText}>
 							CODING<br/>IS FUN
 						</p>
 						<p className={HomeStyles.section__main__top__left__lowerText}>
 							CONSISTENCY<br/>&amp; CREATIVITY
 						</p>
-						<button type="button" className={HomeStyles.section__main__top__left__button}>
+						<motion.button whileTap={{scale: 0.8}} type="button" className={HomeStyles.section__main__top__left__button}>
 							CONTACT ME
-						</button>
-					</div>
-					<div className={HomeStyles.section__main__top__right}>
-						<Image src={'https://res.cloudinary.com/dcd2fsghf/image/upload/v1646057845/portfolio-res/image1_tqnuau.webp'} layout="fill" className={HomeStyles.section__main__top__right__image} objectFit="cover" alt="First Impression Image" priority />
-					</div>
+						</motion.button>
+					</motion.div>
+					<motion.div animate={{x : [-1000,0] }} className={HomeStyles.section__main__top__right}>
+						<Image src={'https://res.cloudinary.com/blueshomepage/image/upload/v1646375596/portfolio/image1_d3m6hu.webp'} layout="fill" className={HomeStyles.section__main__top__right__image} objectFit="cover" alt="First Impression Image" priority />
+					</motion.div>
 				</div>
-				<div className={HomeStyles.section__main__bottom}>
+				<motion.div animate={{y: [100,0]}} className={HomeStyles.section__main__bottom}>
 					<p>
 						UI / UX Designer | Front-End Developer
 					</p>
-				</div>
+				</motion.div>
 			</main>
 			<div className="container">
 			<section className={HomeStyles.section__about}>
@@ -69,11 +70,11 @@ const Home = () => {
 				<div className={HomeStyles.section__skills__lower}>
 					<LazyLoadCard/>
 				</div>
-				<button type="button" className={HomeStyles.section__skills__button}>
+				<motion.button whileTap={{scale: 0.8}} type="button" className={HomeStyles.section__skills__button}>
 					<a href="/Resume.pdf" target={"_blank"} rel={"noreferrer"}>
 						Download Resume
 					</a>
-				</button>
+				</motion.button>
 			</section>
 			<section className={HomeStyles.section__contact}>
 				<div className={HomeStyles.section__contact__upper}>
